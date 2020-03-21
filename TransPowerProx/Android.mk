@@ -18,6 +18,8 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
     libpower \
     libprox
 
+LOCAL_JAVA_LIBRARIES += telephony-common
+
 LOCAL_AAPT_FLAGS := --auto-add-overlay
 
 # proguard:

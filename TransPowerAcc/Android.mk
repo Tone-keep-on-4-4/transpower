@@ -19,7 +19,12 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
     libacc \
     libpower
 
+LOCAL_JAVA_LIBRARIES += telephony-common
+LOCAL_USE_AAPT2 := true
+
 LOCAL_AAPT_FLAGS := --auto-add-overlay
+LOCAL_AAPT_FLAGS += \
+	--extra-packages com.sony.transmitpower.sensor
 
 # proguard:
 #LOCAL_PROGUARD_ENABLED := disabled
